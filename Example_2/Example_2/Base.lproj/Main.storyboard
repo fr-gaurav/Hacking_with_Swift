@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ta-D9-rh2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMS-5h-Jil">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faA-Kd-j4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKG-Q9-n4q">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="spain"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EgP-oS-Gop"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5Z-dV-DYM">
+                                <rect key="frame" x="107" y="218" width="200" height="100"/>
+                                <state key="normal" image="uk"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZ3-Df-X5I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJh-uZ-KlI">
+                                <rect key="frame" x="76" y="660" width="302" height="0.0"/>
+                                <edgeInsets key="layoutMargins" top="8" left="18" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F5Z-dV-DYM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C2Q-LP-i0V"/>
+                            <constraint firstItem="hKG-Q9-n4q" firstAttribute="centerX" secondItem="F5Z-dV-DYM" secondAttribute="centerX" id="FqP-Ob-JVa"/>
+                            <constraint firstItem="cJh-uZ-KlI" firstAttribute="top" secondItem="hKG-Q9-n4q" secondAttribute="bottom" constant="200" id="LQb-hc-gVK"/>
+                            <constraint firstItem="kMS-5h-Jil" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="TJ1-1X-6mC"/>
+                            <constraint firstItem="hKG-Q9-n4q" firstAttribute="top" secondItem="F5Z-dV-DYM" secondAttribute="bottom" constant="42" id="dDx-uu-bk9"/>
+                            <constraint firstItem="kMS-5h-Jil" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ecQ-t2-UFf"/>
+                            <constraint firstItem="F5Z-dV-DYM" firstAttribute="centerX" secondItem="kMS-5h-Jil" secondAttribute="centerX" id="hzp-mP-ZGO"/>
+                            <constraint firstItem="F5Z-dV-DYM" firstAttribute="top" secondItem="kMS-5h-Jil" secondAttribute="bottom" constant="18" id="jJq-mh-F1E"/>
+                            <constraint firstItem="F5Z-dV-DYM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pNB-9u-qKf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jk6-qm-0qi"/>
+                    <connections>
+                        <outlet property="Scoreboard" destination="cJh-uZ-KlI" id="ADL-Zc-o05"/>
+                        <outlet property="button1" destination="kMS-5h-Jil" id="fEd-2d-6Nb"/>
+                        <outlet property="button2" destination="F5Z-dV-DYM" id="rWq-D1-b5U"/>
+                        <outlet property="button3" destination="hKG-Q9-n4q" id="fzy-4q-PxX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d3E-Hp-QIS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ta-D9-rh2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cl0-Pp-Nhm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rgK-Q2-YNT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIu-PW-WDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="spain" width="200" height="100"/>
+        <image name="uk" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
